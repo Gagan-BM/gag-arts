@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import QRCode from "qrcode";
 import { FullscreenImage } from "@/components/artwork/fullscreen-image";
@@ -27,9 +28,12 @@ export default async function ArtworkPage({
   return (
     <PageShell>
       <section className="relative min-h-screen overflow-hidden px-5 pt-24 sm:px-8">
-        <img
+        <Image
           src={artwork.heroImage}
           alt={artwork.heroAlt}
+          fill
+          priority
+          sizes="100vw"
           className="absolute inset-0 size-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,9,7,0.98),rgba(7,9,7,0.70)_46%,rgba(7,9,7,0.16)),linear-gradient(0deg,#070907,transparent_45%)]" />

@@ -13,9 +13,12 @@ export default function Home() {
   return (
     <PageShell>
       <section className="noise grain relative min-h-[88vh] overflow-hidden px-5 pt-28 sm:px-8">
-        <img
+        <Image
           src={artworks[0].heroImage}
           alt={artworks[0].heroAlt}
+          fill
+          priority
+          sizes="100vw"
           className="absolute inset-0 size-full object-cover opacity-42"
         />
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,9,7,0.98),rgba(7,9,7,0.72)_48%,rgba(7,9,7,0.28)),linear-gradient(0deg,rgba(7,9,7,0.98),transparent_38%)]" />

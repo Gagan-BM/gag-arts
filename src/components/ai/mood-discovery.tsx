@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, SlidersHorizontal } from "lucide-react";
 import { artworks, aesthetics, moods, roomColors } from "@/lib/data/artworks";
@@ -112,11 +113,15 @@ export function MoodDiscovery() {
             key={artwork.id}
             className="group grid gap-5 border-t border-white/10 pt-5 md:grid-cols-[0.42fr_1fr_0.12fr]"
           >
-            <img
-              src={artwork.heroImage}
-              alt={artwork.heroAlt}
-              className="aspect-[5/4] rounded-sm object-cover opacity-82 transition duration-700 group-hover:opacity-100"
-            />
+            <div className="relative aspect-[5/4] overflow-hidden rounded-sm bg-forest/30">
+              <Image
+                src={artwork.heroImage}
+                alt={artwork.heroAlt}
+                fill
+                sizes="(min-width: 768px) 28vw, 100vw"
+                className="object-cover opacity-82 transition duration-700 group-hover:opacity-100"
+              />
+            </div>
             <div>
               <p className="font-mono text-xs text-mist/42">Match {index + 1} / {artworks.length}</p>
               <h3 className="mt-3 font-serif text-4xl text-ivory">{artwork.title}</h3>

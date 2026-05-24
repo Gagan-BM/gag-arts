@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import type { Artwork } from "@/types/artwork";
@@ -11,9 +12,11 @@ export function ArtworkStrip({ artwork, index }: { artwork: Artwork; index: numb
     >
       <span className="font-mono text-xs text-mist/46">{String(index + 1).padStart(2, "0")}</span>
       <div className="relative aspect-[5/6] overflow-hidden rounded-sm bg-forest/30 md:aspect-[4/3]">
-        <img
+        <Image
           src={artwork.heroImage}
           alt={artwork.heroAlt}
+          fill
+          sizes="(min-width: 768px) 26vw, 100vw"
           className="size-full object-cover opacity-88 transition duration-700 group-hover:scale-105 group-hover:opacity-100"
         />
       </div>
