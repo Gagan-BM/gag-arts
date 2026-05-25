@@ -45,7 +45,7 @@ export default function Home() {
               {brand.appName} is a cinematic digital gallery for experiencing original paintings through
               story, texture, music, room context, and the quiet weather around their making.
             </p>
-            <div className="mt-9 flex flex-wrap gap-3">
+            <div className="mt-9 flex flex-wrap items-center gap-3">
               <ButtonLink href="/gallery">
                 Enter Gallery
                 <ArrowRight className="size-4" aria-hidden="true" />
@@ -54,6 +54,29 @@ export default function Home() {
                 <Play className="size-4" aria-hidden="true" />
                 Try Room Preview
               </ButtonLink>
+              <a
+                href="https://instagram.com/gag.arts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-sm border border-white/20 px-4 py-2 text-sm text-mist/80 transition hover:border-clay/60 hover:text-clay"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+                @gag.arts
+              </a>
             </div>
           </Reveal>
         </div>

@@ -349,7 +349,7 @@ export const artworks: Artwork[] = [
     ],
   },
   {
-    id: "aw-006",
+    id: "aw-012",
     slug: "deer-portrait",
     title: "Ember Stag",
     subtitle: "A bold deer silhouette against a glowing orange dusk.",
@@ -375,7 +375,7 @@ export const artworks: Artwork[] = [
     dominantPalette: ["#f0a11e", "#d64a1f", "#13100c", "#6b2b19"],
     media: [
       {
-        id: "aw-006-hero",
+        id: "aw-012-hero",
         kind: "hero",
         url: "/artworks/Deer_portrait.jpg",
         alt: "Deer Portrait original painting",
