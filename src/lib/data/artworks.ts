@@ -37,6 +37,41 @@ export const artworks: Artwork[] = [
   },
   {
     id: "aw-002",
+    slug: "echoes-of-war",
+    title: "Echoes Of War",
+    subtitle: "Warriors rising through shadow, dust, and forgotten glory.",
+    heroImage: "/artworks/Warriors.jpg",
+    heroAlt: "Echoes Of War original painting",
+    story:
+      "Echoes Of War captures the spirit of resilience and brotherhood carried through battle. The figures emerge like memories from smoke and fire.",
+    emotion:
+      "Bold, cinematic, intense, and heroic. A painting filled with movement and power.",
+    process:
+      "Painted with dark layered textures, dramatic contrast, and glowing warm tones to create tension and motion.",
+    musicInspiration:
+      "Epic percussion, battle chants, and cinematic orchestral scores.",
+    materials: ["Oil", "Canvas"],
+    dimensions: "Update dimensions",
+    timeSpent: "Update time spent",
+    availability: "Available",
+    price: null,
+    collectorNotes:
+      "A commanding statement piece for collectors drawn to mythology, battle, and cinematic storytelling.",
+    moodTags: ["Bold", "Dark", "Contemporary"],
+    roomColors: ["Coffee brown", "Charcoal black", "Warm ivory"],
+    aestheticTags: ["Contemporary", "Rustic"],
+    dominantPalette: ["#2a1b16", "#6f2e1f", "#d98b2b", "#efe1c4"],
+    media: [
+      {
+        id: "aw-002-hero",
+        kind: "hero",
+        url: "/artworks/Warriors.jpg",
+        alt: "Echoes Of War original painting",
+      },
+    ],
+  },
+  {
+    id: "aw-003",
     slug: "bike-jump",
     title: "Gravity Break",
     subtitle: "A bold moment of motion against a burning sunset field.",
@@ -62,7 +97,7 @@ export const artworks: Artwork[] = [
     dominantPalette: ["#f2b21b", "#d95b2b", "#1a1411", "#6b3328"],
     media: [
       {
-        id: "aw-002-hero",
+        id: "aw-003-hero",
         kind: "hero",
         url: "/artworks/Bikejump.jpg",
         alt: "Bike Jump original painting",
@@ -70,7 +105,7 @@ export const artworks: Artwork[] = [
     ],
   },
   {
-    id: "aw-003",
+    id: "aw-004",
     slug: "red-classic-car",
     title: "Redline Memories",
     subtitle: "A vintage machine held in red memory and road dust.",
@@ -96,7 +131,7 @@ export const artworks: Artwork[] = [
     dominantPalette: ["#c83225", "#2b322d", "#c8c2b3", "#111111"],
     media: [
       {
-        id: "aw-003-hero",
+        id: "aw-004-hero",
         kind: "hero",
         url: "/artworks/Car.jpg",
         alt: "Red Classic Car original painting",
@@ -104,11 +139,11 @@ export const artworks: Artwork[] = [
     ],
   },
   {
-    id: "aw-004",
+    id: "aw-005",
     slug: "cool-dog",
     title: "Too Cool To Bark",
     subtitle: "A playful portrait with quiet attitude and warm color.",
-    heroImage: "/artworks/Cool_dog.jpg",
+    heroImage: "/artworks/Cooldog.jpg",
     heroAlt: "Cool Dog original painting",
     story:
       "Cool Dog is a character study: humorous, stylish, and slightly mysterious. It brings personality without becoming loud.",
@@ -130,15 +165,21 @@ export const artworks: Artwork[] = [
     dominantPalette: ["#b83a2f", "#ead6b1", "#1b1512", "#d9b65d"],
     media: [
       {
-        id: "aw-004-hero",
+        id: "aw-005-hero",
         kind: "hero",
-        url: "/artworks/Cool_dog.jpg",
-        alt: "Cool Dog original painting",
+        url: "/artworks/Cooldog.jpg",
+        alt: "Cool Dog closeup",
       },
-    ],
+      {
+        id: "aw-005-texture-1",
+        kind: "texture",
+        url: "/artworks/Cool_dog.jpg",
+        alt: "Cool Dog texture",
+      },
+    ]
   },
   {
-    id: "aw-005",
+    id: "aw-006",
     slug: "deer",
     title: "Stillness Of Wilderness",
     subtitle: "A still forest spirit resting inside sunset color.",
@@ -164,7 +205,7 @@ export const artworks: Artwork[] = [
     dominantPalette: ["#eab21d", "#c23321", "#253a27", "#120d0a"],
     media: [
       {
-        id: "aw-005-hero",
+        id: "aw-006-hero",
         kind: "hero",
         url: "/artworks/Deer.jpg",
         alt: "Deer original painting",
@@ -278,7 +319,7 @@ export const artworks: Artwork[] = [
     slug: "mahabharath",
     title: "Between Doubt & Dharma",
     subtitle: "A mythic beam of light, motion, and divine tension.",
-    heroImage: "/artworks/Mahabharath.jpg",
+    heroImage: "/artworks/KrishnaArjun.jpg",
     heroAlt: "Mahabharath original painting",
     story:
       "Mahabharath captures a moment of epic force: light cutting through conflict, movement, and destiny. It carries drama, devotion, and story.",
@@ -302,7 +343,7 @@ export const artworks: Artwork[] = [
       {
         id: "aw-010-hero",
         kind: "hero",
-        url: "/artworks/Mahabharath.jpg",
+        url: "/artworks/KrishnaArjun.jpg",
         alt: "Mahabharath original painting",
       },
     ],
@@ -338,6 +379,41 @@ export const artworks: Artwork[] = [
         kind: "hero",
         url: "/artworks/Deer_portrait.jpg",
         alt: "Deer Portrait original painting",
+      },
+    ],
+  },
+  {
+    id: "aw-011",
+    slug: "cosmic-drift",
+    title: "Cosmic Drift",
+    subtitle: "A silent voyage through stars, distance, and endless blue.",
+    heroImage: "/artworks/Space.jpg",
+    heroAlt: "Cosmic Drift original painting",
+    story:
+      "Cosmic Drift explores the feeling of floating beyond gravity and thought. The painting captures solitude, wonder, and the infinite calm hidden inside space.",
+    emotion:
+      "Dreamlike, vast, mysterious, and meditative. A work that invites stillness and imagination.",
+    process:
+      "Built using layered blues, glowing highlights, and deep spatial contrast to create a cinematic sense of depth and motion.",
+    musicInspiration:
+      "Ambient synths, deep space echoes, and slow cinematic soundscapes.",
+    materials: ["Acrylic", "Canvas"],
+    dimensions: "Update dimensions",
+    timeSpent: "Update time spent",
+    availability: "Available",
+    price: null,
+    collectorNotes:
+      "Ideal for modern interiors, creative studios, and spaces that embrace minimal atmosphere.",
+    moodTags: ["Dreamy", "Minimal", "Dark"],
+    roomColors: ["Mist grey", "Charcoal black", "Warm ivory"],
+    aestheticTags: ["Minimal", "Contemporary"],
+    dominantPalette: ["#071426", "#1d4d7a", "#8bb7d9", "#dfe8f0"],
+    media: [
+      {
+        id: "aw-011-hero",
+        kind: "hero",
+        url: "/artworks/Space.jpg",
+        alt: "Cosmic Drift original painting",
       },
     ],
   },
